@@ -43,6 +43,10 @@ namespace ASP.NET_Server.Controllers.StationStatusController
         [HttpPost]
         public ActionResult <Status> Post([FromBody] Status status)
         {
+            var existingStatus = statusService.GetByDate(status.date);
+
+            if (existingStatus != null) return NotFound($"Status for today is already Insertd");
+
             statusService.Create(status);
             return CreatedAtAction(nameof(Get), new { id = status.Id }, status);
         }
