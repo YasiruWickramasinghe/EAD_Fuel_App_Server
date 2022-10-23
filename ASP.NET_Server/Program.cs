@@ -1,7 +1,9 @@
 using ASP.NET_Server.Models;
 using ASP.NET_Server.Models.StationModel;
+using ASP.NET_Server.Models.StationStatus;
 using ASP.NET_Server.Services;
 using ASP.NET_Server.Services.StationService;
+using ASP.NET_Server.Services.StationStatus;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 var builder = WebApplication.CreateBuilder(args);
@@ -31,6 +33,20 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
         new MongoClient(builder.Configuration.GetValue<string>("StationStoreDatabaseSettings:ConnectionString")));
 
 builder.Services.AddScoped<IStationServices, StationService>();
+
+
+
+// Add Station services to the container.
+builder.Services.Configure<StatusStoreDatabaseSettings>(
+        builder.Configuration.GetSection(nameof(StatusStoreDatabaseSettings)));
+
+builder.Services.AddSingleton<IStatusStoreDatabaseSettings>(sp =>
+        sp.GetRequiredService<IOptions<StatusStoreDatabaseSettings>>().Value);
+
+builder.Services.AddSingleton<IMongoClient>(sp =>
+        new MongoClient(builder.Configuration.GetValue<string>("StationStoreDatabaseSettings:ConnectionString")));
+
+builder.Services.AddScoped<IStatusService, StatusSevice>();
 
 
 // Other Services
