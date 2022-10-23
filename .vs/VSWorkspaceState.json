@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ASP.NET_Server",
+    "\\ASP.NET_Server\\Controllers",
+    "\\ASP.NET_Server\\Controllers\\StationController",
+    "\\ASP.NET_Server\\Models",
+    "\\ASP.NET_Server\\Models\\StationModel",
+    "\\ASP.NET_Server\\Services",
+    "\\ASP.NET_Server\\Services\\StationService"
   ],
+  "SelectedNode": "\\ASP.NET_Server\\Services\\StudentService.cs",
   "PreviewInSolutionExplorer": false
 }
