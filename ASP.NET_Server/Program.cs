@@ -1,7 +1,9 @@
 using ASP.NET_Server.Models;
+using ASP.NET_Server.Models.QueueModel;
 using ASP.NET_Server.Models.StationModel;
 using ASP.NET_Server.Models.StationStatus;
 using ASP.NET_Server.Services;
+using ASP.NET_Server.Services.QueueService;
 using ASP.NET_Server.Services.StationService;
 using ASP.NET_Server.Services.StationStatus;
 using Microsoft.Extensions.Options;
@@ -48,6 +50,18 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
 
 builder.Services.AddScoped<IStatusService, StatusSevice>();
 
+
+// Add Queue services to the container.
+builder.Services.Configure<QueueStoreDatabaseSettings>(
+        builder.Configuration.GetSection(nameof(QueueStoreDatabaseSettings)));
+
+builder.Services.AddSingleton<IQueueStoreDatabaseSettings>(sp =>
+        sp.GetRequiredService<IOptions<QueueStoreDatabaseSettings>>().Value);
+
+builder.Services.AddSingleton<IMongoClient>(sp =>
+        new MongoClient(builder.Configuration.GetValue<string>("QueueStoreDatabaseSettings:ConnectionString")));
+
+builder.Services.AddScoped<IQueueServices, QueueService>();
 
 // Other Services
 

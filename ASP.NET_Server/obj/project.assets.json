@@ -883,19 +883,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\malit\\.nuget\\packages\\": {}
+    "C:\\Users\\Sajith\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\SLIIT\\4th Year (2022)\\2nd Sem\\EAD\\Assignment1\\EAD_Fuel_App_Server\\ASP.NET_Server\\ASP.NET_Server.csproj",
+      "projectUniqueName": "D:\\SLIIT\\4th YEAR\\2nd SEMESTER\\(2) Enterprise Application Development - SE4040\\(00) Assignments\\EAD_Fuel_App_Server\\ASP.NET_Server\\ASP.NET_Server.csproj",
       "projectName": "ASP.NET_Server",
-      "projectPath": "F:\\SLIIT\\4th Year (2022)\\2nd Sem\\EAD\\Assignment1\\EAD_Fuel_App_Server\\ASP.NET_Server\\ASP.NET_Server.csproj",
-      "packagesPath": "C:\\Users\\malit\\.nuget\\packages\\",
-      "outputPath": "F:\\SLIIT\\4th Year (2022)\\2nd Sem\\EAD\\Assignment1\\EAD_Fuel_App_Server\\ASP.NET_Server\\obj\\",
+      "projectPath": "D:\\SLIIT\\4th YEAR\\2nd SEMESTER\\(2) Enterprise Application Development - SE4040\\(00) Assignments\\EAD_Fuel_App_Server\\ASP.NET_Server\\ASP.NET_Server.csproj",
+      "packagesPath": "C:\\Users\\Sajith\\.nuget\\packages\\",
+      "outputPath": "D:\\SLIIT\\4th YEAR\\2nd SEMESTER\\(2) Enterprise Application Development - SE4040\\(00) Assignments\\EAD_Fuel_App_Server\\ASP.NET_Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\malit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sajith\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
