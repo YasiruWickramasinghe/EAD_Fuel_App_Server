@@ -36,6 +36,11 @@ namespace ASP.NET_Server.Services.StationStatus
             return _status.Find(status => status.date == date).FirstOrDefault();
         }
 
+        public Status GetByType(string type)
+        {
+            return _status.Find(status => status.fuelType == type).FirstOrDefault();
+        }
+
         public void Remove(string id)
         {
             _status.DeleteOne(status => status.Id == id);

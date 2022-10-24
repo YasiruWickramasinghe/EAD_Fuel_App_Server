@@ -8,6 +8,7 @@ namespace ASP.NET_Server.Services.StationStatus
         List<Status> Get();
         Status Get(string id);
         Status GetByDate(string date);
+        Status GetByType(string fuelType);
         Status Create(Status station);
         void Update(string id, Status station);
         void Remove(string id);
