@@ -2,10 +2,12 @@ using ASP.NET_Server.Models;
 using ASP.NET_Server.Models.QueueModel;
 using ASP.NET_Server.Models.StationModel;
 using ASP.NET_Server.Models.StationStatus;
+using ASP.NET_Server.Models.VehicleModel;
 using ASP.NET_Server.Services;
 using ASP.NET_Server.Services.QueueService;
 using ASP.NET_Server.Services.StationService;
 using ASP.NET_Server.Services.StationStatus;
+using ASP.NET_Server.Services.VehicleService;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 var builder = WebApplication.CreateBuilder(args);
@@ -62,6 +64,18 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
         new MongoClient(builder.Configuration.GetValue<string>("QueueStoreDatabaseSettings:ConnectionString")));
 
 builder.Services.AddScoped<IQueueServices, QueueService>();
+
+// Add Vehicle services to the container.
+builder.Services.Configure<VehicleStoreDatabaseSettings>(
+        builder.Configuration.GetSection(nameof(VehicleStoreDatabaseSettings)));
+
+builder.Services.AddSingleton<IVehicleStoreDatabaseSettings>(sp =>
+        sp.GetRequiredService<IOptions<VehicleStoreDatabaseSettings>>().Value);
+
+builder.Services.AddSingleton<IMongoClient>(sp =>
+        new MongoClient(builder.Configuration.GetValue<string>("VehicleStoreDatabaseSettings:ConnectionString")));
+
+builder.Services.AddScoped<IVehicleServices, VehicleService>();
 
 // Other Services
 
