@@ -26,6 +26,11 @@ namespace ASP.NET_Server.Services.StationStatus
             return _status.Find(status => true).ToList();
         }
 
+        public List<Status> GetByStation(string name)
+        {
+            return _status.Find(status => status.stationName == name).ToList();
+        }
+
         public Status Get(string id)
         {
             return _status.Find(status => status.Id == id).FirstOrDefault();

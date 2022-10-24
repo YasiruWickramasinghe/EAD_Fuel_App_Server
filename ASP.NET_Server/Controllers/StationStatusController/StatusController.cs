@@ -28,15 +28,19 @@ namespace ASP.NET_Server.Controllers.StationStatusController
             return statusService.Get();
         }
 
+        // GET: api/<StatusController>
+        [HttpGet("station/{id}")]
+        public ActionResult<List<Status>> GetByStation(string id)
+        {
+            return statusService.GetByStation(id);
+        }
+
+
         // GET api/<StatusController>/5
         [HttpGet("{id}")]
         public ActionResult <Status> Get(string id)
         {
-            var status = statusService.Get(id);
-
-            if (status == null) return NotFound($"Status with Id = {id} not Found");
-
-            return status;
+            return statusService.Get(id);
         }
 
         // POST api/<StatusController>

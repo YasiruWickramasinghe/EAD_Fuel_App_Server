@@ -6,6 +6,7 @@ namespace ASP.NET_Server.Services.QueueService
     {
         List<Queue> Get();
         Queue Get(string id);
+        List<Queue> GetByStation(string name);
         Queue Create(Queue queue);
         void Update(string id, Queue queue);
         void Remove(string id);

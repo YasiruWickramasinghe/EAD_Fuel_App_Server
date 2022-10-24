@@ -29,6 +29,11 @@ namespace ASP.NET_Server.Services.QueueService
             return _queue.Find(queue => queue.Id == id).FirstOrDefault();
         }
 
+        public List<Queue> GetByStation(string name)
+        {
+            return _queue.Find(queue => queue.stationName == name).ToList();
+        }
+
         public void Remove(string id)
         {
             _queue.DeleteOne(queue => queue.Id == id);

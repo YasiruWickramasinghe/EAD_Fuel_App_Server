@@ -1,20 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-<<<<<<< HEAD
-    "\\ASP.NET_Server"
-  ],
-  "SelectedNode": "\\ASP.NET_Server.sln",
-=======
     "\\ASP.NET_Server",
     "\\ASP.NET_Server\\Controllers",
+    "\\ASP.NET_Server\\Controllers\\QueueController",
     "\\ASP.NET_Server\\Controllers\\StationController",
-    "\\ASP.NET_Server\\Models",
-    "\\ASP.NET_Server\\Models\\StationModel",
-    "\\ASP.NET_Server\\Services",
-    "\\ASP.NET_Server\\Services\\StationService"
+    "\\ASP.NET_Server\\Controllers\\StationStatusController"
   ],
-  "SelectedNode": "\\ASP.NET_Server\\Services\\StudentService.cs",
->>>>>>> 6ef3c036779c8277891f10bd095574a733390b80
+  "SelectedNode": "\\ASP.NET_Server.sln",
   "PreviewInSolutionExplorer": false
 }

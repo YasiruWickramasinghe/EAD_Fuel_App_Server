@@ -34,6 +34,13 @@ namespace ASP.NET_Server.Controllers.QueueController
             return queue;
         }
 
+        // GET api/<QueueController>/5
+        [HttpGet("station/{id}")]
+        public ActionResult<List<Queue>> GetByStation(string id)
+        {
+            return queueService.GetByStation(id);
+        }
+
         // POST api/<QueueController>
         [HttpPost]
         public ActionResult<Queue> Post([FromBody] Queue queue)

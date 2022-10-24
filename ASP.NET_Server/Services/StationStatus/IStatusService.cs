@@ -6,6 +6,7 @@ namespace ASP.NET_Server.Services.StationStatus
     public interface IStatusService
     {
         List<Status> Get();
+        List<Status> GetByStation(string id);
         Status Get(string id);
         Status GetByDate(string date);
         Status GetByType(string fuelType);
