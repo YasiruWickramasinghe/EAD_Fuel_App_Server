@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#FFC107"
+    tools:context=".StationOwnerLoginActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Owner Login"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/login_owner_username"
+        android:hint="Enter Email"
+        android:textSize="20dp"
+        android:textColorHint="#857F7F"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="20dp"/>
+
+    <!--    <EditText-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:id="@+id/login_username"-->
+    <!--        android:hint="Enter Username"-->
+    <!--        android:textSize="25dp"-->
+    <!--        android:textColorHint="@color/black"-->
+    <!--        android:background="@drawable/edittextbackground"-->
+    <!--        android:layout_marginBottom="30dp"-->
+    <!--        android:paddingLeft="20dp"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/login_owner_password"
+        android:hint="Enter Password"
+        android:textSize="20dp"
+        android:textColorHint="#857F7F"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="20dp"/>
+
+    <!--    <EditText-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:id="@+id/login_password"-->
+    <!--        android:hint="Enter Password"-->
+    <!--        android:textSize="25dp"-->
+    <!--        android:textColorHint="@color/black"-->
+    <!--        android:background="@drawable/edittextbackground"-->
+    <!--        android:layout_marginBottom="30dp"-->
+    <!--        android:paddingLeft="20dp"/>-->
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/login"
+        android:text="sign in"
+        android:textSize="20dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account"
+        android:textColor="@color/purple_700"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ownerReg"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="30dp"/>
+
+
+
+
+
+
+</LinearLayout>

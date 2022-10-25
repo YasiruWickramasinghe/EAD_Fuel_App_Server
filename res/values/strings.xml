@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Login-RegistrationAppForFuelStation-UsingSQLiteDB</string>
+
+    <string-array name="names">
+        <item>Car</item>
+        <item>Van</item>
+        <item>Motor Bike</item>
+        <item>Other</item>
+    </string-array>
+</resources>

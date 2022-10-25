@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#FFC107"
+    tools:context=".StationOwnerRegistration">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Station Name"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/stationName"
+        android:hint="Enter Fuel Station Name"
+        android:textSize="20dp"
+        android:textColorHint="#857F7F"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Station No"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/stationNo"
+        android:hint="Enter Station Number"
+        android:textSize="20dp"
+        android:textColorHint="#857F7F"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/username"
+        android:hint="Enter Email"
+        android:textSize="20dp"
+        android:textColorHint="#857F7F"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/txtPwd"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+   <!-- <ImageView
+        android:id="@+id/imageview_show_hide_pwd1"
+        android:layout_width="44dp"
+        android:layout_height="21dp" />-->
+
+    <EditText
+        android:id="@+id/ownerPassword"
+        android:layout_width="392dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="Enter Password"
+        android:paddingLeft="20dp"
+        android:textColorHint="#857F7F"
+        android:textSize="20dp" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+   <!-- <ImageView
+        android:id="@+id/imageview_show_hide_pwd2"
+        android:layout_width="49dp"
+        android:layout_height="21dp" />-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/ownerRepassword"
+        android:hint="Confirm Password"
+        android:textSize="20dp"
+        android:textColorHint="#857F7F"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/signup"
+        android:text="Register"
+        android:textSize="20dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/signin"
+        android:text="Already have an account? Login"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#07000000"
+        android:layout_marginBottom="100dp"/>
+
+    <!--<ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/station1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginTop="-35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup to start your service..."
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/stationName"
+            android:layout_height="wrap_content"
+            android:hint="Station Name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/stationNo"
+            android:layout_height="wrap_content"
+            android:hint="Station No"
+            android:layout_marginTop="2dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/username"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginTop="2dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ownerPassword"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginTop="2dp"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ownerRepassword"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:layout_marginTop="2dp"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/signup"
+        android:background="@color/black"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin"
+        android:text="Already have an account? Login"
+        android:background="#00000000"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"/>-->
+
+
+</LinearLayout>
