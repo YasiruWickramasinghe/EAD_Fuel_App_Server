@@ -5,8 +5,11 @@
     "\\ASP.NET_Server\\Controllers",
     "\\ASP.NET_Server\\Controllers\\QueueController",
     "\\ASP.NET_Server\\Controllers\\StationController",
-    "\\ASP.NET_Server\\Controllers\\StationStatusController"
+    "\\ASP.NET_Server\\Controllers\\StationStatusController",
+    "\\ASP.NET_Server\\Models",
+    "\\ASP.NET_Server\\Services",
+    "\\ASP.NET_Server\\Services\\StationService"
   ],
-  "SelectedNode": "\\ASP.NET_Server.sln",
+  "SelectedNode": "\\ASP.NET_Server\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }
